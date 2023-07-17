@@ -1,0 +1,99 @@
+================= TABLA DE USUARIOS ====================== X
+1. ID
+2. Nombres
+3. Apellidos
+4. IBM
+5. Contraseña
+6. Permisos
+7. Rol
+8. Estado
+9. Token
+10. Delete at
+11. Created at
+12. Update at
+
+================= TABLA DE BITACORAS ====================== X
+1. ID
+2. Accion
+3. ID Usuario 
+4. Created at
+5. Update at
+
+================= TABLA DE UBICACIONES ====================== X
+1. ID
+2. codigo
+3. Nombre
+4. Departamento 
+5. Created at
+6. Update at
+
+================= TABLA DE UNIDADES ====================== X
+1. ID
+2. Nombre
+3. Codigo Administrativo
+4. Delete at
+5. Create at
+6. Update at
+
+================= TABLA DE SERVICIOS ====================== X
+1. ID
+2. Nombre
+3. ID Unidad
+4. ID Padre (Servicio General)
+5. Tipo (1. Servicio General, 2. Servicio en especifico)
+6. Delete at
+7. Create at
+8. Update at
+
+================= TABLA DE EXAMENES ====================== X
+1. ID
+2. ID Unidad Medica
+3. ID Servicio (RX, USG, MMO, DMO)
+4. Nombre
+5. Delete at
+6. Create at
+7. Update at
+
+================= TABLA DE PACIENTES ====================== x
+1. ID
+2. ID Unidad
+3. Afiliacion (se dejo como unico)
+4. Nombres
+5. Apellidos
+6. Fecha Nacimiento (Opcional)
+7. Edad (Opcional)
+8. Numero RX
+9. Numero USG
+10. Numero MMO
+11. Numero DMO
+12. Delete at
+13. Create at
+14. Update at
+
+========== TABLA DE CODIGOS DE PACIENTES ================
+1. ID
+2. ID Paciente
+3. Nomenclatura (RX,USG,MMO,DMO)
+4. Correlativo
+5. Año
+6. Codigo (RX01-22)
+7. Estado 
+12. Delete at
+13. Create at
+14. Update at
+
+
+================= TABLA DE CITAS =======================
+1. ID
+2. Fecha
+3. ID Paciente
+4. Numero Examen (RX, USG, MMO, DMO - Asignado al paciente)
+5. ID Servicio (Solicitante)
+6. ID Examen (Estudio a realizar)
+7. Estado (Registrada, En Atencion, Ausente, Realizada, Reprogramada)
+8. Tipo (Nueva - 1era vez, Reconsulta - 2 o mas citas)
+9. Comentarios 
+10. Delete at
+11. Create at
+12. Update at
+* Agregar campos de material usados en el estudio de la cita
