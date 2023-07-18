@@ -8,7 +8,7 @@ services:
    MYSQL_USER: usr_laravel
    MYSQL_PASSWORD: Usr.igss.2022
   ports:
-   - 33079:3306
+   - 33072:3306
   volumes:
    - ./database/schemas/:/var/lib/mysql
   networks:
@@ -19,7 +19,7 @@ services:
    context: ./
    dockerfile: Dockerfile
   ports:
-   - 8900:80
+   - 8200:80
   volumes:
    - ./code-dev:/var/www
    - ./code-dev/public:/var/www/html
